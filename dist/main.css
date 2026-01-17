@@ -1,0 +1,159 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#000000;
+}
+abbr,acronym { border: 0;
+}
+
+.sec-mob {display: none;}
+
+/* Custom CSS
+ * --------------------------------------- */
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #bcdfdf;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .loader {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border: 4px solid #111;
+	animation: loader 2s infinite ease;
+  }
+
+  .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #111;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+body{
+	color: #000;
+	color: rgba(0,0,0,0.5);
+	font-family: 'Montserrat', sans-serif;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 4em;
+}
+h3 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 3em;
+}
+#first{
+	background-color: #fff;
+	color: #000;
+}
+
+#first p {
+	color: #000;
+}
+#days-count h1, #days-count h2, #days-count p {
+	color: #ffffff;
+}
+.next, .last {
+	padding-left: 20%;
+	padding-right: 20%;
+	background-color: #fff;
+}
+.btn-secondary {
+	background-color: #222;
+	border-radius: 15px;
+	border: 0px;
+}
+#first h1 {
+	color: #000;
+}
+#friend-wish, #wish, #memo, #last, {
+	background-color: #bcdfdf;
+}
+#first p, #last p, #friend-wish-b p {
+	margin: 1em 10em 0 10em;
+}
+#first p span {
+	font-size: .6em;
+}
+p{
+	font-size: 1.5em;
+	color: #000;
+}
+.section {
+	text-align: center;
+	background-size: cover;
+}
+.fa-heart-o {
+	color: red;
+}
+a#scrollTop {
+	transition: .3s;
+	text-decoration: underline;
+}
+a#scrollTop:focus {text-decoration: none;}
+a#scrollTop p{
+	font-size: 1em;
+	color: #000;
+	opacity: .3;
+}
+a#scrollTop:hover {
+	opacity: .6;
+}
+.wish {
+	width: 100%;
+	padding: 40px;
+	text-align: center;
+}
+.wsh h2, .wsh p {
+	color: #fff;
+}
+.wish p {
+	margin-top: 8px;
+	font-size: 1em;
+}
